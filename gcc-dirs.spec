@@ -2,7 +2,7 @@ Summary:	Common dirs for GCC compilers and crosscompilers
 Summary(pl):	Katalogi wspólne dla kompilatorów zwyk³ych i skro¶nych z kolekcji GNU
 Name:		gcc-dirs
 Version:	1.0
-Release:	1
+Release:	2
 License:	free
 Group:		Base
 Conflicts:	gcc <= 5:3.3.4-5
@@ -18,7 +18,7 @@ Katalogi wspólne dla kompilatorów zwyk³ych i skro¶nych z kolekcji GNU.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_libdir}/{gcc,gcc-lib/%{arch}-pld-linux}
+install -d $RPM_BUILD_ROOT%{_libdir}/{gcc,gcc-lib/%{_target_platform}}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -27,4 +27,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %dir %{_libdir}/gcc
 %dir %{_libdir}/gcc-lib
-%dir %{_libdir}/gcc-lib/%{arch}-pld-linux
+%dir %{_libdir}/gcc-lib/%{_target_platform}
