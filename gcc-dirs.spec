@@ -18,12 +18,12 @@ Katalogi wspólne dla kompilatorów zwyk³ych i skro¶nych z kolekcji GNU.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_libdir}/gcc/%{_target_platform}
+# still there's no gpc for gcc-3.[34].X
+install -d $RPM_BUILD_ROOT%{_libdir}/{gcc,gcc-lib}/%{_target_platform}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{_libdir}/gcc
-%dir %{_libdir}/gcc/%{_target_platform}
+%{_libdir}/gcc*
