@@ -5,6 +5,7 @@ Version:	1.0
 Release:	3
 License:	free
 Group:		Base
+Requires:	FHS
 Conflicts:	gcc < 5:3.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
