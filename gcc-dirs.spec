@@ -6,7 +6,6 @@ Release:	3
 License:	free
 Group:		Base
 Conflicts:	gcc < 5:3.4.0
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
