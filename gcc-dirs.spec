@@ -2,7 +2,7 @@ Summary:	Common dirs for GCC compilers and crosscompilers
 Summary(pl):	Katalogi wspólne dla kompilatorów zwyk³ych i skro¶nych z kolekcji GNU
 Name:		gcc-dirs
 Version:	1.0
-Release:	3
+Release:	4
 License:	free
 Group:		Base
 Provides:	%{name}(%{_target_platform})
