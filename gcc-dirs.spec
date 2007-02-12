@@ -1,5 +1,5 @@
 Summary:	Common dirs for GCC compilers and crosscompilers
-Summary(pl):	Katalogi wsp髄ne dla kompilator體 zwyk硑ch i skro秐ych z kolekcji GNU
+Summary(pl.UTF-8):   Katalogi wsp贸lne dla kompilator贸w zwyk艂ych i skro艣nych z kolekcji GNU
 Name:		gcc-dirs
 Version:	1.0
 Release:	4
@@ -12,8 +12,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Common dirs for GNU collection of compilers and crosscompilers.
 
-%description -l pl
-Katalogi wsp髄ne dla kompilator體 zwyk硑ch i skro秐ych z kolekcji GNU.
+%description -l pl.UTF-8
+Katalogi wsp贸lne dla kompilator贸w zwyk艂ych i skro艣nych z kolekcji GNU.
 
 %prep
 
